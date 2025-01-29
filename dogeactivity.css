@@ -24,12 +24,13 @@
 html {
   font-family: "Lucida Sans", sans-serif;
 }
-.page{
+.body{
   --pastel_doge: #FFEEBA;
-  --light_doge:#FFE38F;
+  --light_doge: #FFE38F;
   --doge: #FFDA6B;
   --bright_doge:#FFD14C;
   --bold_doge:#E9B825;
+  --doge_brown:#726229;
 }
 
 /*body*/
@@ -53,10 +54,9 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: none;
-  outline: none;
+  outline-color: var(--bold_doge);
   font-size: 20px;
-  background-color: #dfc66d;
+  background-color: var(--doge);
   color: white;
   border-radius: 30px;
   margin: 20px;
@@ -64,7 +64,7 @@ html {
   height: 8vw; /* Keeps it proportional */
   min-width: 100px; /* Prevents icons from becoming too small */
   min-height: 100px;
-  box-shadow: #726229 8px 8px 2px 0px;
+  box-shadow: var(--bold_doge) 6px 6px 0px 0px;
  
 }
 .project-icon:hover {
@@ -104,10 +104,11 @@ html {
   text-align: right;
   padding: 8px;
   align-self: flex-end;
-  border: #dfc66d;
   display: none;
   
 }
+
+
 
 .project-container:not(.dogecoin-core){
   display: none;
@@ -122,7 +123,7 @@ html {
   font-size: 2em;
   font-family: "Montserrat", serif;
   font-weight: 800;
-  color: #ffc107;
+  color: var(--bold_doge);
 }
 
 .subheading{
@@ -162,11 +163,11 @@ html {
   border: none;
   outline: none;
   font-size: 20px;
-  background-color: #dfc66d;
+  background-color: var(--doge);
   color: white;
   width: fit-content;
   padding: 5px 20px;
-  box-shadow: #29221266 4px 4px 4px 0px;
+  box-shadow: var(--bold_doge) 4px 4px 3px 0px;
   cursor: e-resize;
 }
 
@@ -175,7 +176,7 @@ html {
   
 }
 .link-button:active{
-  background-color:#d4b33ea9;
+  background-color: var(--bold_doge);
   box-shadow: none;
 
 }
@@ -190,7 +191,7 @@ html {
 
 a{
   text-decoration: none;
-  color: #726229;
+  color: var(--doge_brown);
   font-weight: 200;
 }
 a:hover{
