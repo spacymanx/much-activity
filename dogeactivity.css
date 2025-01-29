@@ -1,0 +1,226 @@
+
+.comic-neue-regular {
+  font-family: "Comic Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.montserrat-bold {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+.montserrat {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+.page{
+  --pastel_doge: #FFEEBA;
+  --light_doge:#FFE38F;
+  --doge: #FFDA6B;
+  --bright_doge:#FFD14C;
+  --bold_doge:#E9B825;
+}
+
+/*body*/
+.body{
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/*icon library adjustments */
+.icon-container{
+  flex-grow: 1;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+.project-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: #dfc66d;
+  color: white;
+  border-radius: 30px;
+  margin: 20px;
+  width: 8vw; /* Scales with screen size */
+  height: 8vw; /* Keeps it proportional */
+  min-width: 100px; /* Prevents icons from becoming too small */
+  min-height: 100px;
+  box-shadow: #726229 8px 8px 2px 0px;
+ 
+}
+.project-icon:hover {
+  transform: scale(110%)
+  
+}
+.icon-row{
+  display: flex; 
+  flex-direction: row;
+  
+}
+
+.icon-column{
+  display: flex;
+  flex-direction: column;
+}
+
+#column1, #column3{
+  margin-top: 50px;
+}
+
+
+
+/*text*/
+
+.text-container{
+  margin-right: 2%;
+  
+  
+}
+.activity{
+  text-align: right;
+}
+
+
+.project-container{
+  text-align: right;
+  padding: 8px;
+  align-self: flex-end;
+  border: #dfc66d;
+  display: none;
+  
+}
+
+.project-container:not(.dogecoin-core){
+  display: none;
+}
+
+.activity-title{
+  font-size: 2em;
+  font-family: "Montserrat", serif;
+  font-weight: 1500;
+}
+.project-title{
+  font-size: 2em;
+  font-family: "Montserrat", serif;
+  font-weight: 800;
+  color: #ffc107;
+}
+
+.subheading{
+  font-size: 1em;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.paragraph{
+  padding-left: 20px;
+  text-align: justify;
+
+}
+
+.activity .paragraph{
+  font-family: "Comic Neue";
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.project.paragraph{
+  border-left: 6px solid black;
+  min-height: 100px;
+  font-family: 'Comic Neue';
+  font-weight: 300;
+}
+
+
+
+/*link section*/
+.link-button{
+  display: flex;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: #dfc66d;
+  color: white;
+  width: fit-content;
+  padding: 5px 20px;
+  box-shadow: #29221266 4px 4px 4px 0px;
+  cursor: e-resize;
+}
+
+.link-button:hover{
+  opacity: 0.8;
+  
+}
+.link-button:active{
+  background-color:#d4b33ea9;
+  box-shadow: none;
+
+}
+
+.footer{
+  display: flex; 
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: #726229;
+  font-weight: 200;
+}
+a:hover{
+  text-decoration: underline;
+  
+}
+
+
+
+/* For mobile phones/everything: */
+@media(max-width: 768px){
+  /* For desktop: */
+  .text-container{
+    transform: scale(0.95);
+  }
+}
+
+
+@media(min-width: 1000px){
+  /* For desktop: */
+  .icon-container{
+    flex-grow: 1;
+  }
+  .body{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 120px;
+    margin: 2%;
+  }
+
+  
+}
