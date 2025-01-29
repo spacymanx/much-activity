@@ -45,6 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById(defaultProjectId).style.display = "block";
 
   // Randomly open/close projects every 5 seconds if user hasn't clicked
-  setInterval(toggleRandomProject, 3000);
+  setInterval(toggleRandomProject, 2500);
 });
 

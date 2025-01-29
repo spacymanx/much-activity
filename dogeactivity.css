@@ -64,12 +64,11 @@ html {
   height: 8vw; /* Keeps it proportional */
   min-width: 100px; /* Prevents icons from becoming too small */
   min-height: 100px;
-  box-shadow: var(--bold_doge) 6px 6px 0px 0px;
+  box-shadow: var(--bold_doge) -6px 6px 0px 0px;
  
 }
 .project-icon:hover {
   transform: scale(110%)
-  
 }
 .icon-row{
   display: flex; 
@@ -167,17 +166,18 @@ html {
   color: white;
   width: fit-content;
   padding: 5px 20px;
-  box-shadow: var(--bold_doge) 4px 4px 3px 0px;
+  
   cursor: e-resize;
 }
 
 .link-button:hover{
-  opacity: 0.8;
-  
+  transform: translate(0px, -5px);
+  box-shadow: var(--bold_doge) 0px 6px 1px 0px;
 }
 .link-button:active{
   background-color: var(--bold_doge);
   box-shadow: none;
+  transform: translate(0px, 5px);
 
 }
 
