@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="tower" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 9px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-family: AcuminConcept-Medium, 'Acumin Variable Concept';
+        font-size: 72px;
+        font-variation-settings: 'wght' 500, 'wdth' 100, 'slnt' 0;
+        font-weight: 500;
+      }
+
+      .cls-2 {
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        stroke-width: 13px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="199.81 173.74 143.19 385.24 118.58 385.24"/>
+  <polyline class="cls-1" points="199.77 174.24 256.4 385.74 281 385.74"/>
+  <line class="cls-1" x1="174.9" y1="266.78" x2="224.55" y2="266.78"/>
+  <line class="cls-1" x1="167.11" y1="295.9" x2="246.27" y2="347.9"/>
+  <line class="cls-1" x1="232.27" y1="295.9" x2="153.11" y2="347.9"/>
+  <line class="cls-1" x1="232.35" y1="295.9" x2="167.11" y2="295.9"/>
+  <circle class="cls-3" cx="200" cy="133.24" r="44"/>
+  <path class="cls-2" d="M167,190.41c-19.73-11.41-33-32.74-33-57.17s13.32-45.83,33.1-57.23"/>
+  <path class="cls-2" d="M232.46,190.58c19.79-11.31,33.17-32.56,33.3-56.99.13-24.47-13.07-45.9-32.8-57.41"/>
+  <path class="cls-2" d="M150.56,218.96c-29.59-17.12-49.5-49.11-49.5-85.75s19.98-68.75,49.66-85.85"/>
+  <path class="cls-2" d="M248.75,219.23c29.68-16.96,49.76-48.85,49.96-85.49s-19.61-68.86-49.2-86.11"/>
+  <path class="cls-2" d="M130.83,253.23c-41.43-23.96-69.3-68.76-69.3-120.06S89.5,36.92,131.05,12.99"/>
+  <path class="cls-2" d="M268.3,253.6c41.55-23.74,69.66-68.39,69.94-119.69.27-51.39-27.46-96.4-68.88-120.55"/>
+  <g>
+    <text class="cls-4" transform="translate(175.63 158.82)"><tspan x="0" y="0">D</tspan></text>
+    <line class="cls-1" x1="174.23" y1="133.91" x2="199" y2="133.91"/>
+  </g>
+</svg>

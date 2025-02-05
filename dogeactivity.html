@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="dogeactivity.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="dogeactivity.js"></script</script>
+    <script src="dogeactivity.js" defer></script</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Linden+Hill:ital@0;1&family=Mea+Culpa&family=Montserrat:ital,wght@0,900;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,9 +20,15 @@
     <div class="icon-container">
       <div class="icon-row">
         <div id="column1" class="icon-column">
-          <div class="project-icon" onclick="handleProjectClick('dogecoin-core')">dogecoin core</div>
-          <div class="project-icon" onclick="handleProjectClick('dogebox')">dogebox</div>
-          <div class="project-icon" onclick="handleProjectClick('radiodoge')">radiodoge</div>
+          <div class="project-icon" data-project-id="dogecoin-core">
+            dogecoin core
+          </div>
+          <div class="project-icon" data-project-id="dogebox">
+            dogebox
+          </div>
+          <div class="project-icon" data-project-id="radiodoge">
+            <img src="/Users/melody/Dev/Doge_website_much_activity/icon_library/radio_doge.svg" alt="radio_doge">
+          </div>
         </div>
 
         <div id="column2" class="icon-column">
@@ -62,7 +68,7 @@
         </section>
       </div>
       <div class="project">
-        <div class="project-container" class="dogecoin-core" id="dogecoin-core">
+        <div class="project-container" id="dogecoin-core">
           <div class="project">
             <section class="project-title">
               <h2>Dogecoin-core</h2>
@@ -77,6 +83,10 @@
                 WoofWorks is a heartfelt initiative by t
               </p>
             </section>
+            <div class="footer" class="project-container"> 
+              <a class="url-link" href="url">contribute</a>
+              <button class="link-button">Button</button>
+            </div>
           </div>
         </div>
           
@@ -95,6 +105,11 @@
                 WoofWorks is a heartfelt initiative by the Doge community to support local animal shelters and rescue centers worldwide. By providing funding, resources, and awareness campaigns, this project helps ensure that every furry friend finds a loving home. Together, we’re working to build a future where wagging tails and happy barks fill every corner of the world. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
               </p>
             </section>
+
+            <div class="footer" class="project-container"> 
+              <a class="url-link" href="url">contribute</a>
+              <button class="link-button">Button</button>
+            </div>
           </div>
         </div>
 
@@ -113,12 +128,13 @@
                 WoofWorks is a heartfelt initiative by the Doge community to support local animal shelters and rescue centers worldwide. By providing funding, resources, and awareness campaigns, this project helps ensure that every furry friend finds a loving home. Together, we’re working to build a future where wagging tails and happy barks fill every corner of the world. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
               </p>
             </section>
+
+            <div class="footer" class="project-container"> 
+              <a class="url-link" href="url">contribute</a>
+              <button class="link-button">Button</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="footer"> 
-          <a class="url-link" href="url">contribute</a>
-          <button class="link-button">Button</button>
       </div>
     </div>
   </div>

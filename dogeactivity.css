@@ -21,6 +21,11 @@
   font-style: normal;
 }
 
+.project-title h2{
+  margin:0;
+  padding:0;
+}
+
 html {
   font-family: "Lucida Sans", sans-serif;
 }
@@ -31,11 +36,13 @@ html {
   --bright_doge:#FFD14C;
   --bold_doge:#E9B825;
   --doge_brown:#726229;
+  --dark_doge:#AF850B;
+  --gold_doge:#d1b75e;
 }
 
 /*body*/
 .body{
-  margin: 2%;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -57,18 +64,28 @@ html {
   outline-color: var(--bold_doge);
   font-size: 20px;
   background-color: var(--doge);
-  color: white;
+  color: black;
   border-radius: 30px;
   margin: 20px;
-  width: 8vw; /* Scales with screen size */
-  height: 8vw; /* Keeps it proportional */
+  width: 16vw; /* Scales with screen size */
+  height: 16vw; /* Keeps it proportional */
   min-width: 100px; /* Prevents icons from becoming too small */
   min-height: 100px;
   box-shadow: var(--bold_doge) -6px 6px 0px 0px;
  
 }
 .project-icon:hover {
-  transform: scale(110%)
+  transform: scale(1.2);
+}
+
+.active-icon {
+  transform: scale(1.2); /* Enlarges the icon */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  
+}
+
+.projecticon img{
+  margin: 10px;
 }
 .icon-row{
   display: flex; 
@@ -96,33 +113,40 @@ html {
 }
 .activity{
   text-align: right;
+  margin-bottom: 50px;
 }
 
 
 .project-container{
   text-align: right;
-  padding: 8px;
   align-self: flex-end;
   display: none;
+  padding: 0rem 2rem 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--pastel_doge);
+  border-radius: 20px;
+  box-shadow: var(--dark_doge) 4px 4px 6px 0px;
   
 }
-
-
-
-.project-container:not(.dogecoin-core){
-  display: none;
+h2{
+  margin: 0;
+  padding: 0;
 }
-
 .activity-title{
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Montserrat", serif;
   font-weight: 1500;
+  padding: 0;
+  margin: 0;
 }
 .project-title{
   font-size: 2em;
   font-family: "Montserrat", serif;
   font-weight: 800;
   color: var(--bold_doge);
+  padding-top: 10px;
+  padding: 0;
+  margin: 0svb;
 }
 
 .subheading{
@@ -130,6 +154,11 @@ html {
   font-family: "Montserrat", serif;
   font-weight: 500;
   letter-spacing: 0;
+}
+
+
+.project .subheading{
+  color: var(--bold_doge);
 }
 
 .paragraph{
@@ -144,10 +173,13 @@ html {
   font-style: normal;
   line-height: 1.5;
   font-size: 1rem;
+  
 }
 
+
+
 .project.paragraph{
-  border-left: 6px solid black;
+  border-left: 6px solid var(--bold_doge);
   min-height: 100px;
   font-family: 'Comic Neue';
   font-weight: 300;
@@ -159,25 +191,27 @@ html {
 .link-button{
   display: flex;
   border-radius: 20px;
-  border: none;
+  border: none ;
   outline: none;
   font-size: 20px;
-  background-color: var(--doge);
+  background-color: var(--bold_doge);
   color: white;
   width: fit-content;
   padding: 5px 20px;
-  
   cursor: e-resize;
+  transform: translate(0px, -2.5px);
+  box-shadow: var(--dark_doge) 2px 3px 0.5px 0.5px;
 }
 
 .link-button:hover{
   transform: translate(0px, -5px);
-  box-shadow: var(--bold_doge) 0px 6px 1px 0px;
+  box-shadow: var(--dark_doge) 4px 6px 1px 1px;
 }
 .link-button:active{
   background-color: var(--bold_doge);
-  box-shadow: none;
-  transform: translate(0px, 5px);
+  
+  transform: translate(0px, -2.5px);
+  box-shadow: var(--dark_doge) 2px 3px 0.5px 0.5px;
 
 }
 
@@ -212,9 +246,20 @@ a:hover{
 
 @media(min-width: 1000px){
   /* For desktop: */
-  .icon-container{
-    flex-grow: 1;
+
+  .project-icon{
+    width: 8vw; 
+    height: 8vw;
+    border-radius: 35px;
+    margin: 10vm;
   }
+  .icon-container{
+    
+    margin-top: 50px;
+
+  }
+
+
   .body{
     display: flex;
     flex-direction: row;
@@ -223,5 +268,19 @@ a:hover{
     margin: 2%;
   }
 
-  
+  .project-container{
+    text-align: right;
+    align-self: flex-end;
+    display: none;
+    padding: 0rem 3rem 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--pastel_doge);
+    border-radius: 35px 0px 0px 35px;
+    box-shadow: var(--doge_brown) 4px 4px 6px 0px;
+    margin-right: -68px;
+    /* position: absolute; */
+    /* right: 0; */
+    /* width: 50vw; */
+    /* max-width: 600px; Ensures it doesn’t get too wide */
+  } 
 }
